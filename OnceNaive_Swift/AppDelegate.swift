@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        self.window?.rootViewController = UINavigationController.init()
+        self.window?.rootViewController = BaseTabBarController.init()
         self.window?.makeKeyAndVisible()
         
         return true
