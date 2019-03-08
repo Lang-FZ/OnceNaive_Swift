@@ -15,6 +15,12 @@
 		5E5F5A1D222E8A19009B87A6 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F5A1C222E8A19009B87A6 /* BaseTabBarController.swift */; };
 		5E5F5A24222E8C02009B87A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E5F5A26222E8C02009B87A6 /* Localizable.strings */; };
 		5E5F5A2A222E8E28009B87A6 /* LocalizationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F5A29222E8E28009B87A6 /* LocalizationTool.swift */; };
+		5EADEDB32230C59B00B33CF1 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDB22230C59B00B33CF1 /* RootTabBarController.swift */; };
+		5EADEDB82230C80100B33CF1 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDB72230C80100B33CF1 /* MainController.swift */; };
+		5EADEDBA2230C98F00B33CF1 /* NoneBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDB92230C98F00B33CF1 /* NoneBarController.swift */; };
+		5EADEDBE22311A8B00B33CF1 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDBD22311A8B00B33CF1 /* Define.swift */; };
+		5EADEDC0223120F300B33CF1 /* AppDelegateNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDBF223120F300B33CF1 /* AppDelegateNotificationName.swift */; };
+		5EADEDC22231259000B33CF1 /* AppBackgroundTaskTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDC12231259000B33CF1 /* AppBackgroundTaskTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,12 @@
 		5E5F5A25222E8C02009B87A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5E5F5A28222E8D99009B87A6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5E5F5A29222E8E28009B87A6 /* LocalizationTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTool.swift; sourceTree = "<group>"; };
+		5EADEDB22230C59B00B33CF1 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		5EADEDB72230C80100B33CF1 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		5EADEDB92230C98F00B33CF1 /* NoneBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneBarController.swift; sourceTree = "<group>"; };
+		5EADEDBD22311A8B00B33CF1 /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		5EADEDBF223120F300B33CF1 /* AppDelegateNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateNotificationName.swift; sourceTree = "<group>"; };
+		5EADEDC12231259000B33CF1 /* AppBackgroundTaskTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackgroundTaskTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				5E5F5A05222E84EE009B87A6 /* AppDelegate.swift */,
+				5EADEDC12231259000B33CF1 /* AppBackgroundTaskTool.swift */,
+				5EADEDBF223120F300B33CF1 /* AppDelegateNotificationName.swift */,
 				5E5F5A1E222E8A76009B87A6 /* Root */,
 				5E5F5A17222E86CB009B87A6 /* BaseController */,
 				5E5F5A2C222E8F11009B87A6 /* Service */,
@@ -78,6 +92,7 @@
 				5E5F5A1C222E8A19009B87A6 /* BaseTabBarController.swift */,
 				5E5F5A18222E890A009B87A6 /* BaseNavigationController.swift */,
 				5E5F5A1A222E89F1009B87A6 /* BaseViewController.swift */,
+				5EADEDB92230C98F00B33CF1 /* NoneBarController.swift */,
 			);
 			path = BaseController;
 			sourceTree = "<group>";
@@ -85,6 +100,8 @@
 		5E5F5A1E222E8A76009B87A6 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				5EADEDB22230C59B00B33CF1 /* RootTabBarController.swift */,
+				5EADEDB62230C7DB00B33CF1 /* Main */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -126,8 +143,17 @@
 		5E5F5A2D222E8FBA009B87A6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				5EADEDBD22311A8B00B33CF1 /* Define.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		5EADEDB62230C7DB00B33CF1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5EADEDB72230C80100B33CF1 /* MainController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,11 +228,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EADEDC0223120F300B33CF1 /* AppDelegateNotificationName.swift in Sources */,
 				5E5F5A1B222E89F1009B87A6 /* BaseViewController.swift in Sources */,
+				5EADEDBE22311A8B00B33CF1 /* Define.swift in Sources */,
+				5EADEDB82230C80100B33CF1 /* MainController.swift in Sources */,
+				5EADEDB32230C59B00B33CF1 /* RootTabBarController.swift in Sources */,
+				5EADEDC22231259000B33CF1 /* AppBackgroundTaskTool.swift in Sources */,
 				5E5F5A1D222E8A19009B87A6 /* BaseTabBarController.swift in Sources */,
 				5E5F5A06222E84EE009B87A6 /* AppDelegate.swift in Sources */,
 				5E5F5A19222E890A009B87A6 /* BaseNavigationController.swift in Sources */,
 				5E5F5A2A222E8E28009B87A6 /* LocalizationTool.swift in Sources */,
+				5EADEDBA2230C98F00B33CF1 /* NoneBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +321,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";

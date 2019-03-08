@@ -24,37 +24,27 @@ class BaseNavigationController: UINavigationController,UIGestureRecognizerDelega
 }
 
 extension BaseNavigationController: UINavigationControllerDelegate {
-/*
+
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
-        if let viewController = self.childViewControllers.last {
-            //不需要侧滑返回功能, 以后通通继承自 iGolaNoneBackController
-            let iskind = viewController.isKind(of: iGolaNoneBackController.self) ||
-                viewController.isKind(of: NewFlightsPayCompleteController.self) ||
-                viewController.isKind(of: HotelFinishPayVC.self) ||
-                viewController.isKind(of: NoneRightBackHtmlVC.self)
+        if let viewController = self.viewControllers.last {
+            // MARK: - 不需要侧滑返回的类
+            let iskind = viewController.isKind(of: MainController.self)
             if iskind { return false }
         }
-        return self.childViewControllers.count > 1 ? true : false
+        return self.viewControllers.count > 1 ? true : false
     }
     
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         var isHidden = false
         
-        iGolaLog(viewController)
-        /// 此处的控制器没有导航条，以后通通继承自iGolaNoneBarController
-        let isvc = viewController.isKind(of: iGolaOrderListController.self) ||
-            (viewController as? MainTabBarViewController) != nil ||
-            viewController.isKind(of: WXBaseViewController.self) ||
-            viewController.isKind(of: WXBaseSubViewController.self) ||
-            viewController.isKind(of: iGolaNoneBarController.self) ||
-            viewController.isKind(of: FlightsMainBaseViewcontroller.self)
-        
+        // MARK: - 不需要导航条的类
+        let isvc = viewController.isKind(of: NoneBarController.self)
         if isvc {
             isHidden = true
             navigationController.setNavigationBarHidden(true, animated: animated)
         }else{
             navigationController.setNavigationBarHidden(isHidden, animated: animated)
         }
-    }*/
+    }
 }
 

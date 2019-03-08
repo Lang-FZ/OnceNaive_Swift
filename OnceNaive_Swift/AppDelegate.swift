@@ -17,32 +17,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        self.window?.rootViewController = BaseTabBarController.init()
+        self.window?.rootViewController = RootTabBarController.init()
         self.window?.makeKeyAndVisible()
         
         return true
     }
 
+    //将要进入非活跃状态
     func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
     }
 
+    //已经进入后台  该方法有5秒去处理任务以及返回结果，返回后，很快App就会被系统挂起
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        //请求几分钟权限  可以让 App在后台被杀死 可以走 WillTerminate 方法
+        UIApplication.shared.beginBackgroundTask(expirationHandler: nil)
+        
+        /*
+        //请求后台权限 执行任务
+        AppBackgroundTaskTool.init().backgroundTask { [weak self] in
+            
+        }*/
     }
 
+    //程序将要进入前台，但是还没有处于活跃状态时调用
     func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
     }
 
+    //已经进入前台并处于活跃状态
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
+    //程序被杀死时调用
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        print("程序被杀死")
     }
 }
 
