@@ -28,7 +28,11 @@ extension BaseNavigationController: UINavigationControllerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         if let viewController = self.viewControllers.last {
             // MARK: - 不需要侧滑返回的类
-            let iskind = viewController.isKind(of: MainController.self)
+            let iskind = viewController.isKind(of: TodayController.self) ||
+                viewController.isKind(of: GameController.self) ||
+                viewController.isKind(of: AppController.self) ||
+                viewController.isKind(of: UploadController.self) ||
+                viewController.isKind(of: SearchController.self)
             if iskind { return false }
         }
         return self.viewControllers.count > 1 ? true : false

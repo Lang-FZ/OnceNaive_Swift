@@ -1,3 +1,7 @@
 
-// MARK: -
-test.identifier="English";
+// MARK: - TabBarItem
+root.tab.bar.today="Today";
+root.tab.bar.game="Games";
+root.tab.bar.app="Apps";
+root.tab.bar.upload="Updates";
+root.tab.bar.search="Search";

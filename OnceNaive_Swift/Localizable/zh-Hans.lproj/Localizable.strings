@@ -1,3 +1,7 @@
 
-// MARK: - 
-test.identifier="中文";
+// MARK: - TabBarItem
+root.tab.bar.today="Today";
+root.tab.bar.game="游戏";
+root.tab.bar.app="App";
+root.tab.bar.upload="更新";
+root.tab.bar.search="搜索";
