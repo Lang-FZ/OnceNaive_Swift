@@ -18,7 +18,6 @@
 		5E5F5A2A222E8E28009B87A6 /* LocalizationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F5A29222E8E28009B87A6 /* LocalizationTool.swift */; };
 		5EADEDB32230C59B00B33CF1 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDB22230C59B00B33CF1 /* RootTabBarController.swift */; };
 		5EADEDB82230C80100B33CF1 /* TodayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDB72230C80100B33CF1 /* TodayController.swift */; };
-		5EADEDBA2230C98F00B33CF1 /* NoneBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDB92230C98F00B33CF1 /* NoneBarController.swift */; };
 		5EADEDBE22311A8B00B33CF1 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDBD22311A8B00B33CF1 /* Define.swift */; };
 		5EADEDC0223120F300B33CF1 /* AppDelegateNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDBF223120F300B33CF1 /* AppDelegateNotificationName.swift */; };
 		5EADEDC22231259000B33CF1 /* AppBackgroundTaskTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDC12231259000B33CF1 /* AppBackgroundTaskTool.swift */; };
@@ -47,7 +46,6 @@
 		5E5F5A29222E8E28009B87A6 /* LocalizationTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTool.swift; sourceTree = "<group>"; };
 		5EADEDB22230C59B00B33CF1 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		5EADEDB72230C80100B33CF1 /* TodayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayController.swift; sourceTree = "<group>"; };
-		5EADEDB92230C98F00B33CF1 /* NoneBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneBarController.swift; sourceTree = "<group>"; };
 		5EADEDBD22311A8B00B33CF1 /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		5EADEDBF223120F300B33CF1 /* AppDelegateNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateNotificationName.swift; sourceTree = "<group>"; };
 		5EADEDC12231259000B33CF1 /* AppBackgroundTaskTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackgroundTaskTool.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				5E5F5A1C222E8A19009B87A6 /* BaseTabBarController.swift */,
 				5E5F5A18222E890A009B87A6 /* BaseNavigationController.swift */,
 				5E5F5A1A222E89F1009B87A6 /* BaseViewController.swift */,
-				5EADEDB92230C98F00B33CF1 /* NoneBarController.swift */,
 			);
 			path = BaseController;
 			sourceTree = "<group>";
@@ -363,7 +360,6 @@
 				5E5F5A06222E84EE009B87A6 /* AppDelegate.swift in Sources */,
 				5E5F5A19222E890A009B87A6 /* BaseNavigationController.swift in Sources */,
 				5E5F5A2A222E8E28009B87A6 /* LocalizationTool.swift in Sources */,
-				5EADEDBA2230C98F00B33CF1 /* NoneBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +514,10 @@
 				DEVELOPMENT_TEAM = 6EMFL9A2M9;
 				INFOPLIST_FILE = OnceNaive_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "LFZ.OnceNaive-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -535,7 +534,10 @@
 				DEVELOPMENT_TEAM = 6EMFL9A2M9;
 				INFOPLIST_FILE = OnceNaive_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "LFZ.OnceNaive-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

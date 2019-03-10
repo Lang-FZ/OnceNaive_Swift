@@ -8,11 +8,20 @@
 
 import UIKit
 
-class TodayController: NoneBarController {
+class TodayController: NoneNaviBarController,NoneTabBarProtocol,NoneInteractivePopGestureProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let touch:UITouch = (((touches as NSSet).anyObject() as AnyObject) as! UITouch)
+        
+        let push = NoneNaviBarController()
+        push.view.backgroundColor = UIColor.purple
+        self.navigationController?.pushViewController(push, animated: true)
     }
 }
 

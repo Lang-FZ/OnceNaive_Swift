@@ -26,27 +26,24 @@ class BaseNavigationController: UINavigationController,UIGestureRecognizerDelega
 extension BaseNavigationController: UINavigationControllerDelegate {
 
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        
         if let viewController = self.viewControllers.last {
             // MARK: - 不需要侧滑返回的类
-            let iskind = viewController.isKind(of: TodayController.self) ||
-                viewController.isKind(of: GameController.self) ||
-                viewController.isKind(of: AppController.self) ||
-                viewController.isKind(of: UploadController.self) ||
-                viewController.isKind(of: SearchController.self)
+            let iskind = viewController.conforms(to: NoneInteractivePopGestureProtocol.self)
             if iskind { return false }
         }
         return self.viewControllers.count > 1 ? true : false
     }
     
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        var isHidden = false
         
+        var isHidden = false
         // MARK: - 不需要导航条的类
-        let isvc = viewController.isKind(of: NoneBarController.self)
+        let isvc = viewController.conforms(to: NoneNavigationBarProtocol.self)
         if isvc {
             isHidden = true
             navigationController.setNavigationBarHidden(true, animated: animated)
-        }else{
+        } else {
             navigationController.setNavigationBarHidden(isHidden, animated: animated)
         }
     }

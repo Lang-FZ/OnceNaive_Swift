@@ -15,21 +15,21 @@ class RootTabBar: UIView {
     
     // MARK: - 模糊背景
     private lazy var visual: UIVisualEffectView = {
-        
+
         let visual = UIVisualEffectView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: kTabBarH))
         let effect = UIBlurEffect.init(style: .light)
         visual.effect = effect
         visual.alpha = 1
-        
+
         return visual
     }()
-    //separator
-    private lazy var separator: UIView = {
-        let separator = UIView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: 0.5))
-        separator.backgroundColor = UIColor.init("#A1A1A1")
-        separator.alpha = 0.5
-        return separator
-    }()
+//    //separator
+//    private lazy var separator: UIView = {
+//        let separator = UIView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: 0.5))
+//        separator.backgroundColor = UIColor.init("#A1A1A1")
+//        separator.alpha = 0.5
+//        return separator
+//    }()
     
     
     // MARK: - Today
@@ -50,7 +50,7 @@ class RootTabBar: UIView {
         today_title.textColor = UIColor.init("#A1A1A1")
         today_title.text = LocalizationTool.getStr("root.tab.bar.today")
         today_title.textAlignment = .center
-        today_title.font = UIFont.custom(FontName.PFSC_Medium, size: 10)
+        today_title.font = UIFont.custom(FontName.PFSC_Medium, size: 9)
         return today_title
     }()
     
@@ -72,7 +72,7 @@ class RootTabBar: UIView {
         game_title.textColor = UIColor.init("#A1A1A1")
         game_title.text = LocalizationTool.getStr("root.tab.bar.game")
         game_title.textAlignment = .center
-        game_title.font = UIFont.custom(FontName.PFSC_Medium, size: 10)
+        game_title.font = UIFont.custom(FontName.PFSC_Medium, size: 9)
         return game_title
     }()
     
@@ -94,7 +94,7 @@ class RootTabBar: UIView {
         app_title.textColor = UIColor.init("#A1A1A1")
         app_title.text = LocalizationTool.getStr("root.tab.bar.app")
         app_title.textAlignment = .center
-        app_title.font = UIFont.custom(FontName.PFSC_Medium, size: 10)
+        app_title.font = UIFont.custom(FontName.PFSC_Medium, size: 9)
         return app_title
     }()
     
@@ -116,7 +116,7 @@ class RootTabBar: UIView {
         upload_title.textColor = UIColor.init("#A1A1A1")
         upload_title.text = LocalizationTool.getStr("root.tab.bar.upload")
         upload_title.textAlignment = .center
-        upload_title.font = UIFont.custom(FontName.PFSC_Medium, size: 10)
+        upload_title.font = UIFont.custom(FontName.PFSC_Medium, size: 9)
         return upload_title
     }()
     
@@ -138,14 +138,14 @@ class RootTabBar: UIView {
         search_title.textColor = UIColor.init("#A1A1A1")
         search_title.text = LocalizationTool.getStr("root.tab.bar.search")
         search_title.textAlignment = .center
-        search_title.font = UIFont.custom(FontName.PFSC_Medium, size: 10)
+        search_title.font = UIFont.custom(FontName.PFSC_Medium, size: 9)
         return search_title
     }()
     
     
     // MARK: - 生命周期
     override init(frame: CGRect) {
-        super.init(frame: CGRect.init(x: 0, y: kScreenH-kTabBarH, width: kScreenW, height: kTabBarH))
+        super.init(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: kTabBarH))
         
         self.backgroundColor = UIColor.init(white: 1, alpha: 0.8)
         self.isUserInteractionEnabled = true
@@ -161,7 +161,7 @@ extension RootTabBar {
     private func createRootTabBar() {
         
         self.addSubview(self.visual)
-        self.addSubview(self.separator)
+//        self.addSubview(self.separator)
         
         self.addSubview(self.today)
         self.addSubview(self.game)
@@ -225,8 +225,10 @@ extension RootTabBar {
         }
     }
     
-    @objc public func selectedItem(_ index:Int) {
-        self.selected_item?(index)
+    @objc public func selectedItem(_ index:Int, block_action:Bool = true) {
+        if block_action {        
+            self.selected_item?(index)
+        }
         
         if index != today_index {
             today_icon.image = UIImage.init(named: "TabBar_Today_Gray")
@@ -287,6 +289,17 @@ extension RootTabBar {
     }
     @objc private func selectedSearch() {
         selectedItem(search_index)
+    }
+}
+
+class CustomTabBar: UITabBar {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 

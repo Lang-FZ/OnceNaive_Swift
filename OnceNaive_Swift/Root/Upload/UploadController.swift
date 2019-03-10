@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UploadController: NoneBarController {
+class UploadController: NoneNaviBarController,NoneTabBarProtocol,NoneInteractivePopGestureProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()

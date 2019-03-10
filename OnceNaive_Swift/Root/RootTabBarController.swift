@@ -19,26 +19,31 @@ class RootTabBarController: BaseTabBarController {
     //Today
     private lazy var todayController: BaseNavigationController = {
         let todayController = BaseNavigationController.init(rootViewController: TodayController())
+        todayController.tabBarItem.tag = 1000+today_index
         return todayController
     }()
     //Game
     private lazy var gameController: BaseNavigationController = {
         let gameController = BaseNavigationController.init(rootViewController: GameController())
+        gameController.tabBarItem.tag = 1000+game_index
         return gameController
     }()
     //App
     private lazy var appController: BaseNavigationController = {
         let appController = BaseNavigationController.init(rootViewController: AppController())
+        appController.tabBarItem.tag = 1000+app_index
         return appController
     }()
     //Upload
     private lazy var uploadController: BaseNavigationController = {
         let uploadController = BaseNavigationController.init(rootViewController: UploadController())
+        uploadController.tabBarItem.tag = 1000+upload_index
         return uploadController
     }()
     //Search
     private lazy var searchController: BaseNavigationController = {
         let searchController = BaseNavigationController.init(rootViewController: SearchController())
+        searchController.tabBarItem.tag = 1000+search_index
         return searchController
     }()
     
@@ -58,15 +63,15 @@ class RootTabBarController: BaseTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBar.isHidden = true
-
         self.addChild(todayController)
         self.addChild(gameController)
         self.addChild(appController)
         self.addChild(uploadController)
         self.addChild(searchController)
         
-        self.view.addSubview(custom_tabBar)
+        self.tabBar.backgroundImage = UIImage.init()
+        self.tabBar.addSubview(custom_tabBar)
+        
         custom_tabBar.selectedItem(today_index)
     }
     
@@ -75,5 +80,8 @@ class RootTabBarController: BaseTabBarController {
     /// - Parameter index: 选中哪个VC
     private func selectedVC(_ index:Int) {
         self.selectedIndex = index
+    }
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        custom_tabBar.selectedItem(item.tag-1000, block_action: false)
     }
 }
