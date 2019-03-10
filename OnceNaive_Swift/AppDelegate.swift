@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     //程序被杀死时调用
     func applicationWillTerminate(_ application: UIApplication) {
-        print("程序被杀死")
+        print_debug("程序被杀死")
     }
 }
 
