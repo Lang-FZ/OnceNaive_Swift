@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GameController: NoneNaviBarController,NoneTabBarProtocol,NoneInteractivePopGestureProtocol {
+class GameController: NoneNaviBarController,HadTabBarProtocol,NoneInteractivePopGestureProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,7 +10,7 @@ import UIKit
 
 private let testCellIdentifier = "testCellIdentifier"
 
-class TodayController: NoneNaviBarController,NoneTabBarProtocol,NoneInteractivePopGestureProtocol {
+class TodayController: NoneNaviBarController,HadTabBarProtocol,NoneInteractivePopGestureProtocol {
     
     lazy private var today_table: UITableView = {
         

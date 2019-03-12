@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchController: NoneNaviBarController,NoneTabBarProtocol,NoneInteractivePopGestureProtocol {
+class SearchController: NoneNaviBarController,HadTabBarProtocol,NoneInteractivePopGestureProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()

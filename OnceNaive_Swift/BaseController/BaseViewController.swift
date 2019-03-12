@@ -10,7 +10,7 @@ import UIKit
 
 @objc protocol NoneInteractivePopGestureProtocol {}
 @objc protocol NoneNavigationBarProtocol {}
-@objc protocol NoneTabBarProtocol {}
+@objc protocol HadTabBarProtocol {}
 
 class BaseViewController: UIViewController {
 
@@ -19,7 +19,7 @@ class BaseViewController: UIViewController {
         self.hidesBottomBarWhenPushed = true
     }
     override func viewWillAppear(_ animated: Bool) {
-        if self.conforms(to: NoneTabBarProtocol.self) {
+        if self.conforms(to: HadTabBarProtocol.self) {
             self.hidesBottomBarWhenPushed = false
         }
     }
