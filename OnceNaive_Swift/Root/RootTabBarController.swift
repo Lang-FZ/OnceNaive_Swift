@@ -19,31 +19,31 @@ class RootTabBarController: BaseTabBarController {
     //Today
     private lazy var todayController: BaseNavigationController = {
         let todayController = BaseNavigationController.init(rootViewController: TodayController())
-        todayController.tabBarItem.tag = 1000+today_index
+        todayController.tabBarItem.isEnabled = false
         return todayController
     }()
     //Game
     private lazy var gameController: BaseNavigationController = {
         let gameController = BaseNavigationController.init(rootViewController: GameController())
-        gameController.tabBarItem.tag = 1000+game_index
+        gameController.tabBarItem.isEnabled = false
         return gameController
     }()
     //App
     private lazy var appController: BaseNavigationController = {
         let appController = BaseNavigationController.init(rootViewController: AppController())
-        appController.tabBarItem.tag = 1000+app_index
+        appController.tabBarItem.isEnabled = false
         return appController
     }()
     //Upload
     private lazy var uploadController: BaseNavigationController = {
         let uploadController = BaseNavigationController.init(rootViewController: UploadController())
-        uploadController.tabBarItem.tag = 1000+upload_index
+        uploadController.tabBarItem.isEnabled = false
         return uploadController
     }()
     //Search
     private lazy var searchController: BaseNavigationController = {
         let searchController = BaseNavigationController.init(rootViewController: SearchController())
-        searchController.tabBarItem.tag = 1000+search_index
+        searchController.tabBarItem.isEnabled = false
         return searchController
     }()
     
@@ -80,8 +80,5 @@ class RootTabBarController: BaseTabBarController {
     /// - Parameter index: 选中哪个VC
     private func selectedVC(_ index:Int) {
         self.selectedIndex = index
-    }
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        custom_tabBar.selectedItem(item.tag-1000, block_action: false)
     }
 }

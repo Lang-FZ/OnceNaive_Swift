@@ -64,7 +64,7 @@ public func isIphoneX()->Bool {
 }
 
 // MARK: - Debug模式下打印
-public func print_debug(_ items: Any..., file:String = #file, funcName:String = #function, lineNum:Int = #line) {
+public func print_debug(_ items: Any..., file:String = #file, lineNum:Int = #line) {
     
     #if DEBUG
     let fileName = (file as NSString).lastPathComponent

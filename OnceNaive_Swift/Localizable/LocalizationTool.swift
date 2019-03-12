@@ -57,6 +57,7 @@ class LocalizationTool: NSObject {
             }
         }
         
+        NotificationCenter.default.post(name: language_changed, object: nil)
         UserDefaults.standard.set(language_temp, forKey: lang_key)
         UserDefaults.standard.synchronize()
         
