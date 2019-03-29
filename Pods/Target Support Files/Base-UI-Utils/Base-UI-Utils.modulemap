@@ -1,0 +1,6 @@
+framework module Base_UI_Utils {
+  umbrella header "Base-UI-Utils-umbrella.h"
+
+  export *
+  module * { export * }
+}

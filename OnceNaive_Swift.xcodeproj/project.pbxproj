@@ -11,14 +11,10 @@
 		5E5F5A06222E84EE009B87A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F5A05222E84EE009B87A6 /* AppDelegate.swift */; };
 		5E5F5A0D222E84EF009B87A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5F5A0C222E84EF009B87A6 /* Assets.xcassets */; };
 		5E5F5A10222E84EF009B87A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5F5A0E222E84EF009B87A6 /* LaunchScreen.storyboard */; };
-		5E5F5A19222E890A009B87A6 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F5A18222E890A009B87A6 /* BaseNavigationController.swift */; };
-		5E5F5A1B222E89F1009B87A6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F5A1A222E89F1009B87A6 /* BaseViewController.swift */; };
-		5E5F5A1D222E8A19009B87A6 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F5A1C222E8A19009B87A6 /* BaseTabBarController.swift */; };
 		5E5F5A24222E8C02009B87A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E5F5A26222E8C02009B87A6 /* Localizable.strings */; };
 		5E5F5A2A222E8E28009B87A6 /* LocalizationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F5A29222E8E28009B87A6 /* LocalizationTool.swift */; };
 		5EADEDB32230C59B00B33CF1 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDB22230C59B00B33CF1 /* RootTabBarController.swift */; };
 		5EADEDB82230C80100B33CF1 /* TodayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDB72230C80100B33CF1 /* TodayController.swift */; };
-		5EADEDBE22311A8B00B33CF1 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDBD22311A8B00B33CF1 /* Define.swift */; };
 		5EADEDC0223120F300B33CF1 /* AppDelegateNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDBF223120F300B33CF1 /* AppDelegateNotificationName.swift */; };
 		5EADEDC22231259000B33CF1 /* AppBackgroundTaskTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDC12231259000B33CF1 /* AppBackgroundTaskTool.swift */; };
 		5EADEDC82232746700B33CF1 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDC72232746700B33CF1 /* GameController.swift */; };
@@ -26,8 +22,6 @@
 		5EADEDCC2232748B00B33CF1 /* UploadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDCB2232748B00B33CF1 /* UploadController.swift */; };
 		5EADEDCE2232749600B33CF1 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDCD2232749600B33CF1 /* SearchController.swift */; };
 		5EADEDD222327D0200B33CF1 /* RootTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDD122327D0200B33CF1 /* RootTabBar.swift */; };
-		5EADEDD42232822800B33CF1 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDD32232822800B33CF1 /* Extension+UIColor.swift */; };
-		5EADEDD6223287BD00B33CF1 /* Extension+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDD5223287BD00B33CF1 /* Extension+UIFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,15 +32,11 @@
 		5E5F5A0C222E84EF009B87A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E5F5A0F222E84EF009B87A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E5F5A11222E84EF009B87A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E5F5A18222E890A009B87A6 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
-		5E5F5A1A222E89F1009B87A6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		5E5F5A1C222E8A19009B87A6 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		5E5F5A25222E8C02009B87A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5E5F5A28222E8D99009B87A6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5E5F5A29222E8E28009B87A6 /* LocalizationTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTool.swift; sourceTree = "<group>"; };
 		5EADEDB22230C59B00B33CF1 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		5EADEDB72230C80100B33CF1 /* TodayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayController.swift; sourceTree = "<group>"; };
-		5EADEDBD22311A8B00B33CF1 /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		5EADEDBF223120F300B33CF1 /* AppDelegateNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateNotificationName.swift; sourceTree = "<group>"; };
 		5EADEDC12231259000B33CF1 /* AppBackgroundTaskTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackgroundTaskTool.swift; sourceTree = "<group>"; };
 		5EADEDC72232746700B33CF1 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
@@ -54,8 +44,6 @@
 		5EADEDCB2232748B00B33CF1 /* UploadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadController.swift; sourceTree = "<group>"; };
 		5EADEDCD2232749600B33CF1 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		5EADEDD122327D0200B33CF1 /* RootTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBar.swift; sourceTree = "<group>"; };
-		5EADEDD32232822800B33CF1 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
-		5EADEDD5223287BD00B33CF1 /* Extension+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIFont.swift"; sourceTree = "<group>"; };
 		C8EDAD106E5A9E6A785C9313 /* Pods-OnceNaive_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnceNaive_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnceNaive_Swift/Pods-OnceNaive_Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,23 +84,10 @@
 				5EADEDC12231259000B33CF1 /* AppBackgroundTaskTool.swift */,
 				5EADEDBF223120F300B33CF1 /* AppDelegateNotificationName.swift */,
 				5E5F5A1E222E8A76009B87A6 /* Root */,
-				5E5F5A17222E86CB009B87A6 /* BaseController */,
 				5E5F5A2C222E8F11009B87A6 /* Service */,
-				5E5F5A2B222E8EE8009B87A6 /* Extension */,
-				5E5F5A2D222E8FBA009B87A6 /* Tools */,
 				5E5F5A20222E8AB2009B87A6 /* InfoSet */,
 			);
 			path = OnceNaive_Swift;
-			sourceTree = "<group>";
-		};
-		5E5F5A17222E86CB009B87A6 /* BaseController */ = {
-			isa = PBXGroup;
-			children = (
-				5E5F5A1C222E8A19009B87A6 /* BaseTabBarController.swift */,
-				5E5F5A18222E890A009B87A6 /* BaseNavigationController.swift */,
-				5E5F5A1A222E89F1009B87A6 /* BaseViewController.swift */,
-			);
-			path = BaseController;
 			sourceTree = "<group>";
 		};
 		5E5F5A1E222E8A76009B87A6 /* Root */ = {
@@ -149,28 +124,11 @@
 			path = Localizable;
 			sourceTree = "<group>";
 		};
-		5E5F5A2B222E8EE8009B87A6 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				5EADEDD32232822800B33CF1 /* Extension+UIColor.swift */,
-				5EADEDD5223287BD00B33CF1 /* Extension+UIFont.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
 		5E5F5A2C222E8F11009B87A6 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		5E5F5A2D222E8FBA009B87A6 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				5EADEDBD22311A8B00B33CF1 /* Define.swift */,
-			);
-			path = Tools;
 			sourceTree = "<group>";
 		};
 		5EADEDB62230C7DB00B33CF1 /* Today */ = {
@@ -325,10 +283,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OnceNaive_Swift/Pods-OnceNaive_Swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Base-UI-Utils/Base_UI_Utils.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Base_UI_Utils.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,18 +307,12 @@
 				5EADEDCE2232749600B33CF1 /* SearchController.swift in Sources */,
 				5EADEDC82232746700B33CF1 /* GameController.swift in Sources */,
 				5EADEDCC2232748B00B33CF1 /* UploadController.swift in Sources */,
-				5EADEDD6223287BD00B33CF1 /* Extension+UIFont.swift in Sources */,
 				5EADEDCA2232747E00B33CF1 /* AppController.swift in Sources */,
-				5E5F5A1B222E89F1009B87A6 /* BaseViewController.swift in Sources */,
-				5EADEDBE22311A8B00B33CF1 /* Define.swift in Sources */,
 				5EADEDB82230C80100B33CF1 /* TodayController.swift in Sources */,
 				5EADEDB32230C59B00B33CF1 /* RootTabBarController.swift in Sources */,
 				5EADEDC22231259000B33CF1 /* AppBackgroundTaskTool.swift in Sources */,
-				5E5F5A1D222E8A19009B87A6 /* BaseTabBarController.swift in Sources */,
-				5EADEDD42232822800B33CF1 /* Extension+UIColor.swift in Sources */,
 				5EADEDD222327D0200B33CF1 /* RootTabBar.swift in Sources */,
 				5E5F5A06222E84EE009B87A6 /* AppDelegate.swift in Sources */,
-				5E5F5A19222E890A009B87A6 /* BaseNavigationController.swift in Sources */,
 				5E5F5A2A222E8E28009B87A6 /* LocalizationTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

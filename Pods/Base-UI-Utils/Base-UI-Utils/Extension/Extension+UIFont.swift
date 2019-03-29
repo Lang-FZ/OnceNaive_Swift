@@ -32,7 +32,7 @@ import UIKit
  HelveticaNeue-BoldItalic
  */
 
-enum FontName:String {
+public enum FontName:String {
     
     case PFSC_Medium        = "PingFangSC-Medium"
     case PFSC_Semibold      = "PingFangSC-Semibold"
@@ -59,11 +59,11 @@ enum FontName:String {
     case OpenSansSemibold = "OpenSans-Semibold"
 }
 
-extension UIFont {
+public extension UIFont {
     
-    class func custom(_ customFontName:FontName, size:CGFloat) -> UIFont {
+    public class func custom(_ customFontName:FontName, size:CGFloat) -> UIFont {
         
-        if let font:UIFont = UIFont.init(name: customFontName.rawValue, size: frameMath(size)) {
+        if let font:UIFont = UIFont.init(name: customFontName.rawValue, size: frameMath_static(size)) {
             return font
         } else {
             return UIFont.systemFont(ofSize: size)
