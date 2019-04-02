@@ -6,6 +6,7 @@ target "OnceNaive_Swift" do
 
     pod 'SnapKit'
     pod 'Base-UI-Utils'
+    pod 'Base-UI-Utils/PhotoViewer'
     #pod 'Alamofire'
     #pod 'SDWebImage'
     #pod 'SDWebImage/WebP'
