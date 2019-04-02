@@ -145,7 +145,7 @@ class RootTabBar: UIView {
     
     // MARK: - 生命周期
     override init(frame: CGRect) {
-        super.init(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: kTabBarH))
+        super.init(frame: CGRect.init(x: 0, y: 0, width: NSObject.kScreenW_static, height: NSObject.kTabBarH_static))
         
         self.backgroundColor = UIColor.init(white: 1, alpha: 0.8)
         self.isUserInteractionEnabled = true
