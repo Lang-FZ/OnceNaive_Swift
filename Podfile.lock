@@ -1,28 +1,39 @@
 PODS:
-  - Base-UI-Utils (0.0.14):
-    - Base-UI-Utils/BaseController (= 0.0.14)
-    - Base-UI-Utils/Extension (= 0.0.14)
-    - Base-UI-Utils/Tools (= 0.0.14)
-  - Base-UI-Utils/BaseController (0.0.14):
+  - Base-UI-Utils (0.0.24):
+    - Base-UI-Utils/BaseController (= 0.0.24)
+    - Base-UI-Utils/Extension (= 0.0.24)
+    - Base-UI-Utils/Tools (= 0.0.24)
+  - Base-UI-Utils/BaseController (0.0.24):
     - Base-UI-Utils/Tools
-  - Base-UI-Utils/Extension (0.0.14):
+  - Base-UI-Utils/Extension (0.0.24):
     - Base-UI-Utils/Tools
-  - Base-UI-Utils/Tools (0.0.14)
+  - Base-UI-Utils/PhotoViewer (0.0.24):
+    - Base-UI-Utils/BaseController
+    - Base-UI-Utils/Extension
+    - Base-UI-Utils/Tools
+    - SDWebImage
+  - Base-UI-Utils/Tools (0.0.24)
+  - SDWebImage (5.0.0):
+    - SDWebImage/Core (= 5.0.0)
+  - SDWebImage/Core (5.0.0)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - Base-UI-Utils
+  - Base-UI-Utils/PhotoViewer
   - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Base-UI-Utils
+    - SDWebImage
     - SnapKit
 
 SPEC CHECKSUMS:
-  Base-UI-Utils: 4c571933239b4bda1caddb94c65dc96e494bbf12
+  Base-UI-Utils: 8632119f64564391660c80d702644b837a476156
+  SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 3760befc63fb412be30322fe1ac18b0677bba9b1
+PODFILE CHECKSUM: 5e65d6a881f9e27b6c727f5fc916b7bfd5ac1829
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
