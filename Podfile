@@ -7,13 +7,13 @@ target "OnceNaive_Swift" do
     pod 'SnapKit'
     pod 'Base-UI-Utils'
     pod 'Base-UI-Utils/PhotoViewer'
-    #pod 'Alamofire'
+    pod 'YYModel'
+    pod 'MJExtension'
     #pod 'SDWebImage'
     #pod 'SDWebImage/WebP'
     #pod 'Zip'
     #pod 'SwiftyJSON'
     #pod 'FMDB'
     #pod 'JGProgressHUD'
-    #pod 'YYText'
 
 end
