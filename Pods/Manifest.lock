@@ -13,10 +13,10 @@ PODS:
     - Base-UI-Utils/Tools
     - SDWebImage
   - Base-UI-Utils/Tools (0.0.24)
-  - SDWebImage (5.0.0):
-    - SDWebImage/Core (= 5.0.0)
-  - SDWebImage/Core (5.0.0)
-  - SnapKit (4.2.0)
+  - SDWebImage (5.0.2):
+    - SDWebImage/Core (= 5.0.2)
+  - SDWebImage/Core (5.0.2)
+  - SnapKit (5.0.0)
 
 DEPENDENCIES:
   - Base-UI-Utils
@@ -31,9 +31,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Base-UI-Utils: 8632119f64564391660c80d702644b837a476156
-  SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
 
 PODFILE CHECKSUM: 5e65d6a881f9e27b6c727f5fc916b7bfd5ac1829
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.0.beta.3

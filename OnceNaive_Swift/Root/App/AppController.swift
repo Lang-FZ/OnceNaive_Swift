@@ -12,6 +12,6 @@ class AppController: NoneNaviBarController,HadTabBarProtocol,NoneInteractivePopG
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.red
+        view.backgroundColor = UIColor.red
     }
 }

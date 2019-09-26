@@ -12,6 +12,6 @@ class SearchController: NoneNaviBarController,HadTabBarProtocol,NoneInteractiveP
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.yellow
+        view.backgroundColor = UIColor.yellow
     }
 }

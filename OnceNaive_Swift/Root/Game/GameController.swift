@@ -9,9 +9,9 @@
 import UIKit
 
 class GameController: NoneNaviBarController,HadTabBarProtocol,NoneInteractivePopGestureProtocol {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.cyan
+        view.backgroundColor = UIColor.cyan
     }
 }

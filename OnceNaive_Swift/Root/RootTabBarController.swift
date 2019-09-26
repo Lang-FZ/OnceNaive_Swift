@@ -63,14 +63,14 @@ class RootTabBarController: BaseTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.addChild(todayController)
-        self.addChild(gameController)
-        self.addChild(appController)
-        self.addChild(uploadController)
-        self.addChild(searchController)
+        addChild(todayController)
+        addChild(gameController)
+        addChild(appController)
+        addChild(uploadController)
+        addChild(searchController)
         
-        self.tabBar.backgroundImage = UIImage.init()
-        self.tabBar.addSubview(custom_tabBar)
+        tabBar.backgroundImage = UIImage.init()
+        tabBar.addSubview(custom_tabBar)
         
         custom_tabBar.selectedItem(today_index)
     }
@@ -79,6 +79,6 @@ class RootTabBarController: BaseTabBarController {
     ///
     /// - Parameter index: 选中哪个VC
     private func selectedVC(_ index:Int) {
-        self.selectedIndex = index
+        selectedIndex = index
     }
 }

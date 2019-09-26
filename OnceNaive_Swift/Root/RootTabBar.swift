@@ -147,9 +147,9 @@ class RootTabBar: UIView {
     override init(frame: CGRect) {
         super.init(frame: CGRect.init(x: 0, y: 0, width: NSObject.kScreenW_static, height: NSObject.kTabBarH_static))
         
-        self.backgroundColor = UIColor.init(white: 1, alpha: 0.8)
-        self.isUserInteractionEnabled = true
-        self.createRootTabBar()
+        backgroundColor = UIColor.init(white: 1, alpha: 0.8)
+        isUserInteractionEnabled = true
+        createRootTabBar()
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -160,16 +160,15 @@ extension RootTabBar {
     
     private func createRootTabBar() {
         
-        self.addSubview(self.visual)
-//        self.addSubview(self.separator)
+        addSubview(visual)
         
-        self.addSubview(self.today)
-        self.addSubview(self.game)
-        self.addSubview(self.app)
-        self.addSubview(self.upload)
-        self.addSubview(self.search)
+        addSubview(today)
+        addSubview(game)
+        addSubview(app)
+        addSubview(upload)
+        addSubview(search)
         
-        self.setup_UI()
+        setup_UI()
     }
     // MARK: - 约束
     private func setup_UI() {
