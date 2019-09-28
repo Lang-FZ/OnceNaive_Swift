@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1FA0E8FF26233C7FB6D5D394 /* Pods_OnceNaive_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE6A428A2260C44D16010F5 /* Pods_OnceNaive_Swift.framework */; };
+		5E3AEF5F233DA4D4008D4E21 /* LFZModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AEF5E233DA4D4008D4E21 /* LFZModel.swift */; };
+		5E3AEF61233DB5FF008D4E21 /* TestJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E3AEF60233DB5FF008D4E21 /* TestJSON.json */; };
 		5E5F5A06222E84EE009B87A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F5A05222E84EE009B87A6 /* AppDelegate.swift */; };
 		5E5F5A0D222E84EF009B87A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5F5A0C222E84EF009B87A6 /* Assets.xcassets */; };
 		5E5F5A10222E84EF009B87A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5F5A0E222E84EF009B87A6 /* LaunchScreen.storyboard */; };
@@ -28,6 +30,8 @@
 /* Begin PBXFileReference section */
 		470D5945C497D368CC4CDFBF /* Pods-OnceNaive_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnceNaive_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnceNaive_Swift/Pods-OnceNaive_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		5DE6A428A2260C44D16010F5 /* Pods_OnceNaive_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnceNaive_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E3AEF5E233DA4D4008D4E21 /* LFZModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFZModel.swift; sourceTree = "<group>"; };
+		5E3AEF60233DB5FF008D4E21 /* TestJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJSON.json; sourceTree = "<group>"; };
 		5E5F5A02222E84ED009B87A6 /* OnceNaive_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnceNaive_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E5F5A05222E84EE009B87A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E5F5A0C222E84EF009B87A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,9 +68,19 @@
 		5E3AEF5C233CABF2008D4E21 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5E3AEF5D233DA45B008D4E21 /* ModelTransformation */,
 				5EE4863822A0C8A900823273 /* QRCodeView.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		5E3AEF5D233DA45B008D4E21 /* ModelTransformation */ = {
+			isa = PBXGroup;
+			children = (
+				5E3AEF60233DB5FF008D4E21 /* TestJSON.json */,
+				5E3AEF5E233DA4D4008D4E21 /* LFZModel.swift */,
+			);
+			path = ModelTransformation;
 			sourceTree = "<group>";
 		};
 		5E5F59F9222E84ED009B87A6 = {
@@ -262,6 +276,7 @@
 			files = (
 				5E5F5A10222E84EF009B87A6 /* LaunchScreen.storyboard in Resources */,
 				5E5F5A24222E8C02009B87A6 /* Localizable.strings in Resources */,
+				5E3AEF61233DB5FF008D4E21 /* TestJSON.json in Resources */,
 				5E5F5A0D222E84EF009B87A6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +333,7 @@
 				5EADEDCC2232748B00B33CF1 /* UploadController.swift in Sources */,
 				5EADEDCA2232747E00B33CF1 /* AppController.swift in Sources */,
 				5EADEDB82230C80100B33CF1 /* TodayController.swift in Sources */,
+				5E3AEF5F233DA4D4008D4E21 /* LFZModel.swift in Sources */,
 				5EADEDB32230C59B00B33CF1 /* RootTabBarController.swift in Sources */,
 				5EADEDC22231259000B33CF1 /* AppBackgroundTaskTool.swift in Sources */,
 				5EADEDD222327D0200B33CF1 /* RootTabBar.swift in Sources */,

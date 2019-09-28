@@ -1,0 +1,38 @@
+{
+    "name"  :   "小明",
+    "age"   :   null,
+    "man"   :   true,
+    "id"    :   "1234567",
+    "description"   :   "kfdsjafldsajfla;j",
+    "goodFriend"    :   {
+        "name"  :   "小丽",
+        "age"   :   18,
+        "man"   :   false,
+        "id"    :   "147",
+        "description"   :   "kfyhtr"
+    },
+    "friends"    :   [
+        {
+            "name"  :   "大毛",
+            "age"   :   27,
+            "man"   :   true,
+            "id"    :   "12347",
+            "description"   :   "kf09876yhtr"
+        },
+        {
+            "name"  :   "二毛",
+            "age"   :   19,
+            "man"   :   true,
+            "id"    :   "134567",
+            "description"   :   "1234rfsdsf"
+        },
+        {
+            "name"  :   "三毛",
+            "age"   :   15,
+            "man"   :   true,
+            "id"    :   "123467",
+            "description"   :   "kffdsg"
+        }
+    ]
+}
+
