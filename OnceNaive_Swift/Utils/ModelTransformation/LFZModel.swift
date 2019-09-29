@@ -51,7 +51,10 @@ extension NSObject {
     // MARK: 赋值主方法 字典转模型
     public func LFZ_objectSetKeyValues(_ keyValues : Any) -> Self {
         
-        let JsonData = LFZ_JSONObject(keyValues)
+        guard let JsonData = LFZ_JSONObject(keyValues) as? [String:Any] else {
+            return self
+        }
+        
         let (keys,_) = LFZ_Properties()
         
         for key in keys {

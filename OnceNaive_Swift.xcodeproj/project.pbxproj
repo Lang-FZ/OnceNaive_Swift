@@ -25,6 +25,7 @@
 		5EADEDCE2232749600B33CF1 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDCD2232749600B33CF1 /* SearchController.swift */; };
 		5EADEDD222327D0200B33CF1 /* RootTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDD122327D0200B33CF1 /* RootTabBar.swift */; };
 		5EE4863922A0C8A900823273 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE4863822A0C8A900823273 /* QRCodeView.swift */; };
+		5EF5256C2340C7FD007A94BA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5256B2340C7FD007A94BA /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,10 @@
 		5EADEDCD2232749600B33CF1 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		5EADEDD122327D0200B33CF1 /* RootTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBar.swift; sourceTree = "<group>"; };
 		5EE4863822A0C8A900823273 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		5EF525612340B96A007A94BA /* OnceNaive-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OnceNaive-Header.h"; sourceTree = "<group>"; };
+		5EF525622340C5C4007A94BA /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EF525662340C5CD007A94BA /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EF5256B2340C7FD007A94BA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C8EDAD106E5A9E6A785C9313 /* Pods-OnceNaive_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnceNaive_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnceNaive_Swift/Pods-OnceNaive_Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +141,7 @@
 				5E5F5A0C222E84EF009B87A6 /* Assets.xcassets */,
 				5E5F5A0E222E84EF009B87A6 /* LaunchScreen.storyboard */,
 				5E5F5A11222E84EF009B87A6 /* Info.plist */,
+				5EF525612340B96A007A94BA /* OnceNaive-Header.h */,
 			);
 			name = InfoSet;
 			sourceTree = "<group>";
@@ -168,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				5EADEDC72232746700B33CF1 /* GameController.swift */,
+				5EF5256B2340C7FD007A94BA /* Constants.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -199,6 +206,8 @@
 		D33FCC5BF9E1C9BD7F6788F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EF525662340C5CD007A94BA /* RealmSwift.framework */,
+				5EF525622340C5C4007A94BA /* Realm.framework */,
 				5DE6A428A2260C44D16010F5 /* Pods_OnceNaive_Swift.framework */,
 			);
 			name = Frameworks;
@@ -337,6 +346,7 @@
 				5EADEDB32230C59B00B33CF1 /* RootTabBarController.swift in Sources */,
 				5EADEDC22231259000B33CF1 /* AppBackgroundTaskTool.swift in Sources */,
 				5EADEDD222327D0200B33CF1 /* RootTabBar.swift in Sources */,
+				5EF5256C2340C7FD007A94BA /* Constants.swift in Sources */,
 				5E5F5A06222E84EE009B87A6 /* AppDelegate.swift in Sources */,
 				5E5F5A2A222E8E28009B87A6 /* LocalizationTool.swift in Sources */,
 			);
@@ -492,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6EMFL9A2M9;
 				INFOPLIST_FILE = OnceNaive_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -501,6 +512,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "LFZ.OnceNaive-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/OnceNaive_Swift/OnceNaive-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -512,6 +524,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6EMFL9A2M9;
 				INFOPLIST_FILE = OnceNaive_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -521,6 +534,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "LFZ.OnceNaive-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/OnceNaive_Swift/OnceNaive-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
