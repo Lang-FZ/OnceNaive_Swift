@@ -14,6 +14,8 @@ target "OnceNaive_Swift" do
     pod 'Moya'
     pod 'Realm'
     pod 'RealmSwift'
+    pod 'RxSwift', '~> 5'
+    pod 'RxCocoa', '~> 5'
 #    pod 'SDWebImage'
 #    pod 'SDWebImage/WebP'
     #pod 'JGProgressHUD'

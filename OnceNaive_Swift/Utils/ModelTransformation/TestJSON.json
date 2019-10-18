@@ -1,37 +1,45 @@
 {
-    "name"  :   "小明",
+    "name"  :   "小明明",
     "age"   :   null,
     "man"   :   true,
     "id"    :   "1234567",
-    "description"   :   "kfdsjafldsajfla;j",
+    "type"  :   "click",
+    "description"    :   "测试修改",
+    "new_description"       :   "不识别前缀",
     "goodFriend"    :   {
         "name"  :   "小丽",
         "age"   :   18,
         "man"   :   false,
         "id"    :   "147",
-        "description"   :   "kfyhtr"
-    },
-    "friends"    :   [
+        "description"           :   "kfyhtr",
+        "new_description"       :   "不识别前缀",
+        "friends"    :   [
         {
-            "name"  :   "大毛",
             "age"   :   27,
             "man"   :   true,
             "id"    :   "12347",
-            "description"   :   "kf09876yhtr"
-        },
+            "type"  :   "click",
+            "description"   :   "kf09876yhtr",
+            "new_description"      :   "不识别前缀"
+        }]
+    },
+    "friends"    :   [
         {
-            "name"  :   "二毛",
             "age"   :   19,
             "man"   :   true,
             "id"    :   "134567",
-            "description"   :   "1234rfsdsf"
+            "type"  :   "click",
+            "description"   :   "1234rfsdsf",
+            "new_description"      :   "不识别前缀"
         },
         {
             "name"  :   "三毛",
             "age"   :   15,
             "man"   :   true,
             "id"    :   "123467",
-            "description"   :   "kffdsg"
+            "type"  :   "click",
+            "description"   :   "kffdsg",
+            "new_description"      :   "不识别前缀"
         }
     ]
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FA0E8FF26233C7FB6D5D394 /* Pods_OnceNaive_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE6A428A2260C44D16010F5 /* Pods_OnceNaive_Swift.framework */; };
+		5E2193AC234B766F00ED6527 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2193AB234B766F00ED6527 /* RealmManager.swift */; };
 		5E3AEF5F233DA4D4008D4E21 /* LFZModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3AEF5E233DA4D4008D4E21 /* LFZModel.swift */; };
 		5E3AEF61233DB5FF008D4E21 /* TestJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E3AEF60233DB5FF008D4E21 /* TestJSON.json */; };
 		5E5F5A06222E84EE009B87A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5F5A05222E84EE009B87A6 /* AppDelegate.swift */; };
@@ -25,12 +25,15 @@
 		5EADEDCE2232749600B33CF1 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDCD2232749600B33CF1 /* SearchController.swift */; };
 		5EADEDD222327D0200B33CF1 /* RootTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADEDD122327D0200B33CF1 /* RootTabBar.swift */; };
 		5EE4863922A0C8A900823273 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE4863822A0C8A900823273 /* QRCodeView.swift */; };
+		5EE4ADFB234DB73B0008B9E3 /* CurrentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE4ADFA234DB73B0008B9E3 /* CurrentDelegate.swift */; };
 		5EF5256C2340C7FD007A94BA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5256B2340C7FD007A94BA /* Constants.swift */; };
+		5EF52575234B7003007A94BA /* Pods_OnceNaive_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE6A428A2260C44D16010F5 /* Pods_OnceNaive_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		470D5945C497D368CC4CDFBF /* Pods-OnceNaive_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnceNaive_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnceNaive_Swift/Pods-OnceNaive_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		5DE6A428A2260C44D16010F5 /* Pods_OnceNaive_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnceNaive_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E2193AB234B766F00ED6527 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		5E3AEF5E233DA4D4008D4E21 /* LFZModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFZModel.swift; sourceTree = "<group>"; };
 		5E3AEF60233DB5FF008D4E21 /* TestJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJSON.json; sourceTree = "<group>"; };
 		5E5F5A02222E84ED009B87A6 /* OnceNaive_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnceNaive_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,10 +54,13 @@
 		5EADEDCD2232749600B33CF1 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		5EADEDD122327D0200B33CF1 /* RootTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBar.swift; sourceTree = "<group>"; };
 		5EE4863822A0C8A900823273 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		5EE4ADFA234DB73B0008B9E3 /* CurrentDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentDelegate.swift; sourceTree = "<group>"; };
 		5EF525612340B96A007A94BA /* OnceNaive-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OnceNaive-Header.h"; sourceTree = "<group>"; };
 		5EF525622340C5C4007A94BA /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF525662340C5CD007A94BA /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF5256B2340C7FD007A94BA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5EF5256D234B6D21007A94BA /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EF52571234B6D4C007A94BA /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8EDAD106E5A9E6A785C9313 /* Pods-OnceNaive_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnceNaive_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnceNaive_Swift/Pods-OnceNaive_Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA0E8FF26233C7FB6D5D394 /* Pods_OnceNaive_Swift.framework in Frameworks */,
+				5EF52575234B7003007A94BA /* Pods_OnceNaive_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				5E5F5A05222E84EE009B87A6 /* AppDelegate.swift */,
+				5EE4ADFA234DB73B0008B9E3 /* CurrentDelegate.swift */,
 				5EADEDC12231259000B33CF1 /* AppBackgroundTaskTool.swift */,
 				5EADEDBF223120F300B33CF1 /* AppDelegateNotificationName.swift */,
 				5E5F5A1E222E8A76009B87A6 /* Root */,
@@ -175,6 +182,7 @@
 			children = (
 				5EADEDC72232746700B33CF1 /* GameController.swift */,
 				5EF5256B2340C7FD007A94BA /* Constants.swift */,
+				5E2193AB234B766F00ED6527 /* RealmManager.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -206,6 +214,8 @@
 		D33FCC5BF9E1C9BD7F6788F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EF52571234B6D4C007A94BA /* RealmSwift.framework */,
+				5EF5256D234B6D21007A94BA /* RealmSwift.framework */,
 				5EF525662340C5CD007A94BA /* RealmSwift.framework */,
 				5EF525622340C5C4007A94BA /* Realm.framework */,
 				5DE6A428A2260C44D16010F5 /* Pods_OnceNaive_Swift.framework */,
@@ -337,6 +347,7 @@
 			files = (
 				5EE4863922A0C8A900823273 /* QRCodeView.swift in Sources */,
 				5EADEDC0223120F300B33CF1 /* AppDelegateNotificationName.swift in Sources */,
+				5E2193AC234B766F00ED6527 /* RealmManager.swift in Sources */,
 				5EADEDCE2232749600B33CF1 /* SearchController.swift in Sources */,
 				5EADEDC82232746700B33CF1 /* GameController.swift in Sources */,
 				5EADEDCC2232748B00B33CF1 /* UploadController.swift in Sources */,
@@ -348,6 +359,7 @@
 				5EADEDD222327D0200B33CF1 /* RootTabBar.swift in Sources */,
 				5EF5256C2340C7FD007A94BA /* Constants.swift in Sources */,
 				5E5F5A06222E84EE009B87A6 /* AppDelegate.swift in Sources */,
+				5EE4ADFB234DB73B0008B9E3 /* CurrentDelegate.swift in Sources */,
 				5E5F5A2A222E8E28009B87A6 /* LocalizationTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
