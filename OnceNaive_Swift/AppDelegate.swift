@@ -25,7 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = RootTabBarController.init()
         self.window?.makeKeyAndVisible()
         
-        realmManager.configRealm()
+//        realmManager.configRealm()
+        
+        RxImagePickerDelegateProxy.register { RxImagePickerDelegateProxy(imagePicker: $0) }
         
         return true
     }
